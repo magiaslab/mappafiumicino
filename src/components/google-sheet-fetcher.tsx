@@ -28,7 +28,7 @@ export function GoogleSheetFetcherComponent() {
     setError(null)
     try {
       // Replace this URL with your Google Sheet's published CSV URL
-      const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vS0W4j01qgeA0BlgW4f6PAoJzXBZLVw3DGONHeWnzTO2SdtysSM38I5alXnmATvYdzu13MnMQ-A0WH1/pub?gid=0&single=true&output=csv')
+      const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vS0W4j01qgeA0BlgW4f6PAoJzXBZLVw3DGONHeWnzTO2SdtysSM38I5alXnmATvYdzu13MnMQ-A0WH1/pub?gid=1929364899&single=true&output=csv')
       if (!response.ok) {
         throw new Error('Failed to fetch data')
       }
@@ -49,7 +49,7 @@ export function GoogleSheetFetcherComponent() {
   return (
     <Card className="w-full max-w-3xl mx-auto">
       <CardHeader>
-        <CardTitle>Punti principali</CardTitle>
+        <CardTitle>Punti di controllo</CardTitle>
       </CardHeader>
       <CardContent>
         {isLoading ? (
